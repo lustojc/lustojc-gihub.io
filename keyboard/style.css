@@ -1,0 +1,85 @@
+* {
+  font-family: 'Marmelad', sans-serif;
+  font-size: 17px;
+}
+
+body {
+  width: 100%;
+  margin: 0 auto;
+
+}
+
+textarea {
+  width: 814px;
+  display: flex;
+  height: 140px;
+  min-height: 60px;
+  padding-bottom: 10px;
+  margin: 10px auto;
+  outline: none;
+  resize: vertical;
+}
+
+.keyboard {
+  margin: 0 auto;
+  left: 0;
+  bottom: 0;
+  width: 820px;
+  min-width: 800px;
+  padding: 5px 0;
+  background-color: rgba(16, 17, 14, 0.658);
+}
+
+.keyboard.hidden {
+  bottom: -100%;
+}
+
+.keyboard__keys {
+  text-align: center;
+}
+
+.keyboard__key {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  width: 6%;
+  max-width: 70px;
+  margin: 3px;
+  border-radius: 5px;
+  border: none;
+  background: rgba(238, 56, 56, 0.726);
+  color: white;
+  outline: none;
+  cursor: pointer;
+  vertical-align: top;
+  padding: 0;
+  box-shadow: 0px 1px 2px -1px rgba(251, 255, 0, 0.897);
+  position: relative;
+ 
+}
+
+
+.keyboard__key--wide {
+  width: 12%;
+  max-width: 90px;
+}
+
+.keyboard__key--extra-wide {
+  width: 32%;
+  max-width: 500px;
+}
+
+.keyboard__key--dark {
+  background: rgba(240, 241, 241, 0.2);
+}
+
+.keyboard__key--dark:active {
+  background: rgba(16, 154, 218, 0.5);
+}
+
+.keyboard__key--active {
+  background-color: rgba(37, 255, 8, 0.781);
+  color: black;
+}
+
